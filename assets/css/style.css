@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 54.3744%; /*El font size por defecto me da
+  18,391px. Entonces para que 1rem = 10px hago regla de 3 
+  simple y me da 54.3744%. */
+  scroll-behavior: smooth;
+}
+html,
+body {
+  min-height: 100% !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.bg-gris-claro {
+  background-color: #bababa;
+}
+
+.bg-gris-mas-claro {
+  background-color: #e6e2e2;
+}
+
+button[type="button"] {
+  font-size: 0.7rem;
+}
+

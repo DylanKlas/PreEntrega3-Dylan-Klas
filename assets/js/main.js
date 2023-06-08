@@ -1,3 +1,10 @@
+//Creando el archivo html mediante js
+
+const index_contenedor = getElementById("contenedor");
+const index_contenido = document.createElement("div");
+index_contenido.innerHTML = ""; //codigo html
+index_contenedor.appendChild(index_contenido);
+
 // Programa:
 // Quiero crear objetos de productos tipo mercado libre.
 // Con nombre, id de item, precio, e imagen.

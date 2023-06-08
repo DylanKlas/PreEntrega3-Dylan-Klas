@@ -23,126 +23,416 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <!-- Quiero agregar 3 divs, uno abajo de otro, pueden estar dentro de un section
-    y que cada div tenga una imagen a la izquierda, y a la derecha un título en grande 
-    y abajo el precio -->
     <header>
       <h1 class="text-center bg-gris-claro py-2 mb-4">E-commerce</h1>
     </header>
 
-    <section>
-      <div class="row d-flex mx-auto container-fluid col-6 mb-2">
-        <div class="row d-flex col-6 overflow-hidden">
-          <img
-            src="./assets/img/monitor1-468x378px.png"
-            alt="Imagen producto1"
-          />
-        </div>
-        <div class="row d-flex col-6 overflow-hidden bg-gris-mas-claro">
-          <div class="row d-flex col-12 mx-auto overflow-hidden">
-            <p class="text-uppercase">Monitor gamer benq</p>
-          </div>
-          <div class="row d-flex col-12 mx-auto overflow-hidden">
-            <p class="bg-white text-center my-auto">519000</p>
-          </div>
-          <div
-            class="row mx-auto overflow-hidden align-self-center justify-content-center"
-          >
-            <button
-              type="button"
-              id="index__button_agregar-al-carrito-p1"
-              class="btn btn-success col-4 mx-3"
-            >
-              Agregar al Carrito
-            </button>
+    <main>
+      <div
+        class="container-fluid d-flex flex-row bg-secondary col-12 overflow-hidden"
+        id="contenedor"
+      >
+        <div
+          class="container-fluid d-flex flex-row bg-secondary col-8 justify-content-center overflow-y-scroll vh-100"
+        >
+          <section id="section_productos">
+            <section id="section_select">
+              <div class="col-12 text-center my-5">
+                <form action="#">
+                  <label for="catalog-select"><b>Catálogo</b></label>
+                  <select name="catalog-select">
+                    <option value="catalog-select-electrodomesticos" selected>
+                      Electrodomésticos
+                    </option>
+                    <option value="catalog-select-alimentos">Alimentos</option>
+                    <option value="catalog-select-productoslimpieza">
+                      Productos de Limpieza
+                    </option>
+                    <option value="catalog-select-todos">Todos</option>
+                  </select>
+                  <button type="submit" class="btn btn-primary py-0">
+                    Aceptar
+                  </button>
+                </form>
+              </div>
+            </section>
+            <section>
+              <div
+                class="row d-flex mx-auto container-fluid mb-2"
+                id="div_monitorbenq"
+              >
+                <div class="row d-flex col-6 overflow-hidden">
+                  <img
+                    src="./assets/img/monitor1-468x378px.png"
+                    alt="Imagen monitor benq"
+                  />
+                </div>
+                <div class="row d-flex col-6 overflow-hidden bg-gris-mas-claro">
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="text-uppercase">Monitor gamer benq</p>
+                  </div>
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="bg-white text-center my-auto">519000</p>
+                  </div>
+                  <div
+                    class="row mx-auto overflow-hidden align-self-center justify-content-center"
+                  >
+                    <button
+                      type="button"
+                      id="index__button_agregar-al-carrito-p1"
+                      class="btn btn-success col-4 mx-3"
+                    >
+                      Agregar al Carrito
+                    </button>
 
-            <button
-              type="button"
-              id="index__button_sacar-del-carrito-p1"
-              class="btn btn-danger col-4 mx-3"
-            >
-              Sacar del Carrito
-            </button>
-          </div>
+                    <button
+                      type="button"
+                      id="index__button_sacar-del-carrito-p1"
+                      class="btn btn-danger col-4 mx-3"
+                    >
+                      Sacar del Carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div
+                class="row d-flex mx-auto container-fluid mb-2"
+                id="div_monitorDfd"
+              >
+                <div class="row d-flex col-6 overflow-hidden">
+                  <img
+                    src="./assets/img/monitor2-468x378px.png"
+                    alt="Imagen monitor dfd"
+                  />
+                </div>
+                <div class="row d-flex col-6 overflow-hidden bg-gris-mas-claro">
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="text-uppercase">Monitor gamer DFD</p>
+                  </div>
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="bg-white text-center my-auto">65700</p>
+                  </div>
+                  <div
+                    class="row mx-auto overflow-hidden align-self-center justify-content-center"
+                  >
+                    <button
+                      type="button"
+                      id="index__button_agregar-al-carrito-p2"
+                      class="btn btn-success col-4 mx-3"
+                    >
+                      Agregar al Carrito
+                    </button>
+
+                    <button
+                      type="button"
+                      id="index__button_sacar-del-carrito-p2"
+                      class="btn btn-danger col-4 mx-3"
+                    >
+                      Sacar del Carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div
+                class="row d-flex mx-auto container-fluid mb-2"
+                id="div_monitorAad"
+              >
+                <div class="row d-flex col-6 overflow-hidden">
+                  <img
+                    src="./assets/img/monitor3-468x378px.png"
+                    alt="Imagen monitor aad"
+                  />
+                </div>
+                <div class="row d-flex col-6 overflow-hidden bg-gris-mas-claro">
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="text-uppercase">Monitor gamer aad</p>
+                  </div>
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="bg-white text-center my-auto">435900</p>
+                  </div>
+                  <div
+                    class="row mx-auto overflow-hidden align-self-center justify-content-center"
+                  >
+                    <button
+                      type="button"
+                      id="index__button_agregar-al-carrito-p3"
+                      class="btn btn-success col-4 mx-3"
+                    >
+                      Agregar al Carrito
+                    </button>
+
+                    <button
+                      type="button"
+                      id="index__button_sacar-del-carrito-p3"
+                      class="btn btn-danger col-4 mx-3"
+                    >
+                      Sacar del Carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div
+                class="row d-flex mx-auto container-fluid mb-2"
+                id="div_hamburguesa"
+              >
+                <div class="row d-flex col-6 overflow-hidden">
+                  <img
+                    src="./assets/img/hamburguesa-468x378px.png"
+                    alt="Imagen hamburguesa"
+                  />
+                </div>
+                <div class="row d-flex col-6 overflow-hidden bg-gris-mas-claro">
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="text-uppercase">Hamburguesa doble crunchy</p>
+                  </div>
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="bg-white text-center my-auto">2000</p>
+                  </div>
+                  <div
+                    class="row mx-auto overflow-hidden align-self-center justify-content-center"
+                  >
+                    <button
+                      type="button"
+                      id="index__button_agregar-al-carrito-p3"
+                      class="btn btn-success col-4 mx-3"
+                    >
+                      Agregar al Carrito
+                    </button>
+
+                    <button
+                      type="button"
+                      id="index__button_sacar-del-carrito-p3"
+                      class="btn btn-danger col-4 mx-3"
+                    >
+                      Sacar del Carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div
+                class="row d-flex mx-auto container-fluid mb-2"
+                id="div_ensalada"
+              >
+                <div class="row d-flex col-6 overflow-hidden">
+                  <img
+                    src="./assets/img/ensalada-468x378px.png"
+                    alt="Imagen ensalada"
+                  />
+                </div>
+                <div class="row d-flex col-6 overflow-hidden bg-gris-mas-claro">
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="text-uppercase">Ensalada Healthy Natural</p>
+                  </div>
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="bg-white text-center my-auto">1500</p>
+                  </div>
+                  <div
+                    class="row mx-auto overflow-hidden align-self-center justify-content-center"
+                  >
+                    <button
+                      type="button"
+                      id="index__button_agregar-al-carrito-p3"
+                      class="btn btn-success col-4 mx-3"
+                    >
+                      Agregar al Carrito
+                    </button>
+
+                    <button
+                      type="button"
+                      id="index__button_sacar-del-carrito-p3"
+                      class="btn btn-danger col-4 mx-3"
+                    >
+                      Sacar del Carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div
+                class="row d-flex mx-auto container-fluid mb-2"
+                id="div_papasfritas"
+              >
+                <div class="row d-flex col-6 overflow-hidden">
+                  <img
+                    src="./assets/img/papas-fritas-468x378px.png"
+                    alt="Imagen papas fritas"
+                  />
+                </div>
+                <div class="row d-flex col-6 overflow-hidden bg-gris-mas-claro">
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="text-uppercase">Papas fritas salty doradas</p>
+                  </div>
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="bg-white text-center my-auto">1000</p>
+                  </div>
+                  <div
+                    class="row mx-auto overflow-hidden align-self-center justify-content-center"
+                  >
+                    <button
+                      type="button"
+                      id="index__button_agregar-al-carrito-p3"
+                      class="btn btn-success col-4 mx-3"
+                    >
+                      Agregar al Carrito
+                    </button>
+
+                    <button
+                      type="button"
+                      id="index__button_sacar-del-carrito-p3"
+                      class="btn btn-danger col-4 mx-3"
+                    >
+                      Sacar del Carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div
+                class="row d-flex mx-auto container-fluid mb-2"
+                id="div_aspiradora"
+              >
+                <div class="row d-flex col-6 overflow-hidden">
+                  <img
+                    src="./assets/img/aspiradora-468x378px.png"
+                    alt="Imagen aspiradora"
+                  />
+                </div>
+                <div class="row d-flex col-6 overflow-hidden bg-gris-mas-claro">
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="text-uppercase">Aspiradora Robot Samsung</p>
+                  </div>
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="bg-white text-center my-auto">100000</p>
+                  </div>
+                  <div
+                    class="row mx-auto overflow-hidden align-self-center justify-content-center"
+                  >
+                    <button
+                      type="button"
+                      id="index__button_agregar-al-carrito-p3"
+                      class="btn btn-success col-4 mx-3"
+                    >
+                      Agregar al Carrito
+                    </button>
+
+                    <button
+                      type="button"
+                      id="index__button_sacar-del-carrito-p3"
+                      class="btn btn-danger col-4 mx-3"
+                    >
+                      Sacar del Carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div
+                class="row d-flex mx-auto container-fluid mb-2"
+                id="div_plancha"
+              >
+                <div class="row d-flex col-6 overflow-hidden">
+                  <img
+                    src="./assets/img/plancha-468x378px.png"
+                    alt="Imagen plancha"
+                  />
+                </div>
+                <div class="row d-flex col-6 overflow-hidden bg-gris-mas-claro">
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="text-uppercase">Plancha a Vapor Philips</p>
+                  </div>
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="bg-white text-center my-auto">20000</p>
+                  </div>
+                  <div
+                    class="row mx-auto overflow-hidden align-self-center justify-content-center"
+                  >
+                    <button
+                      type="button"
+                      id="index__button_agregar-al-carrito-p3"
+                      class="btn btn-success col-4 mx-3"
+                    >
+                      Agregar al Carrito
+                    </button>
+
+                    <button
+                      type="button"
+                      id="index__button_sacar-del-carrito-p3"
+                      class="btn btn-danger col-4 mx-3"
+                    >
+                      Sacar del Carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div
+                class="row d-flex mx-auto container-fluid mb-2"
+                id="div_limpiadorVentanas"
+              >
+                <div class="row d-flex col-6 overflow-hidden">
+                  <img
+                    src="./assets/img/limpiavidrios-468x378px.png"
+                    alt="Imagen limpiador ventanas"
+                  />
+                </div>
+                <div class="row d-flex col-6 overflow-hidden bg-gris-mas-claro">
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="text-uppercase">Limpiador Cif Vidrios 500 ml</p>
+                  </div>
+                  <div class="row d-flex col-12 mx-auto overflow-hidden">
+                    <p class="bg-white text-center my-auto">4000</p>
+                  </div>
+                  <div
+                    class="row mx-auto overflow-hidden align-self-center justify-content-center"
+                  >
+                    <button
+                      type="button"
+                      id="index__button_agregar-al-carrito-p3"
+                      class="btn btn-success col-4 mx-3"
+                    >
+                      Agregar al Carrito
+                    </button>
+
+                    <button
+                      type="button"
+                      id="index__button_sacar-del-carrito-p3"
+                      class="btn btn-danger col-4 mx-3"
+                    >
+                      Sacar del Carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </div>
+
+        <div
+          class="container-fluid d-flex bg-info col-4 overflow-hidden vh-100"
+        >
+          <section id="section_carrito">
+            <div class="container d-flex rounded-5 my-5">
+              <p class="bg-white rounded-4 p-5 mx-5">
+                Aca ira el carrito como si fuera en un sidebar.
+              </p>
+            </div>
+          </section>
         </div>
       </div>
-    </section>
+    </main>
 
-    <section>
-      <div class="row d-flex mx-auto container-fluid col-6 mb-2">
-        <div class="row d-flex col-6 overflow-hidden">
-          <img
-            src="./assets/img/monitor2-468x378px.png"
-            alt="Imagen producto2"
-          />
-        </div>
-        <div class="row d-flex col-6 overflow-hidden bg-gris-mas-claro">
-          <div class="row d-flex col-12 mx-auto overflow-hidden">
-            <p class="text-uppercase">Monitor gamer DFD</p>
-          </div>
-          <div class="row d-flex col-12 mx-auto overflow-hidden">
-            <p class="bg-white text-center my-auto">65700</p>
-          </div>
-          <div
-            class="row mx-auto overflow-hidden align-self-center justify-content-center"
-          >
-            <button
-              type="button"
-              id="index__button_agregar-al-carrito-p2"
-              class="btn btn-success col-4 mx-3"
-            >
-              Agregar al Carrito
-            </button>
-
-            <button
-              type="button"
-              id="index__button_sacar-del-carrito-p2"
-              class="btn btn-danger col-4 mx-3"
-            >
-              Sacar del Carrito
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="row d-flex mx-auto container-fluid col-6 mb-2">
-        <div class="row d-flex col-6 overflow-hidden">
-          <img
-            src="./assets/img/monitor3-468x378px.png"
-            alt="Imagen producto3"
-          />
-        </div>
-        <div class="row d-flex col-6 overflow-hidden bg-gris-mas-claro">
-          <div class="row d-flex col-12 mx-auto overflow-hidden">
-            <p class="text-uppercase">Monitor gamer aad</p>
-          </div>
-          <div class="row d-flex col-12 mx-auto overflow-hidden">
-            <p class="bg-white text-center my-auto">435900</p>
-          </div>
-          <div
-            class="row mx-auto overflow-hidden align-self-center justify-content-center"
-          >
-            <button
-              type="button"
-              id="index__button_agregar-al-carrito-p3"
-              class="btn btn-success col-4 mx-3"
-            >
-              Agregar al Carrito
-            </button>
-
-            <button
-              type="button"
-              id="index__button_sacar-del-carrito-p3"
-              class="btn btn-danger col-4 mx-3"
-            >
-              Sacar del Carrito
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/js bootstrap/bootstrap.bundle.js"></script>
     <script src="./assets/js/js bootstrap/bootstrap.js"></script>
